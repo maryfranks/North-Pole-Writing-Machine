@@ -1,3 +1,7 @@
+# only works for nice children the naughty
+# children are all charged for the toys they
+# didn't get
+
 require 'erb'
 
 kids_data      = File.read('data/kids-data.txt')
