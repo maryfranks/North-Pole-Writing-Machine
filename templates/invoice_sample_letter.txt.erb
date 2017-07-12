@@ -1,0 +1,41 @@
+<%=street_number%> <%=street_name %> <%=street_suffix%>.
+Toronto, ON
+<%= postal_code%>
+
+December 26, 2017
+
+Attention: <%=name%>'s Parents
+
+Re: Christmas Toy Invoice
+
+Below are the charges for <%=name%>'s Christmas toy order. The cost for each toy is a percentage of your home's estimated value. The cost includes delivery fee, service fee and the North Pole transportation tax. HST is separate.
+
+=================
+<%=name%>'s Toy Order
+=================
+<%list_of_toys.each do |toy_with_price_hash| %>
+<%if toy_with_price_hash[:name] == "Kaleidoscope" -%>
+$<%="#{toy_with_price_hash[:price]}\t\t"-%><%=toy_with_price_hash[:name] -%> (out of stock)<%else -%>
+$<%="#{toy_with_price_hash[:price]}\t"-%><%=toy_with_price_hash[:name] -%>
+<%end -%>
+<%end -%>
+
+----
+$<%="#{subtotal}\t"-%>Subtotal
+$<%="#{tax.to_i}\t\t"-%>Tax
+====
+$<%="#{total.to_i}\t"-%> Total
+
+Your total comes to $565. Payment is due upon receipt of invoice. Should you fail to submit prompt payment we will repossess all toys in this order by January 7.  I encourage you to imagine the tantrum that will ensue should all of <%=name%>'s toys suddenly disappear.
+
+Due to a high number of NSF incidents we no longer accept personal cheques. Please make all payments through PayPal, Interac e-transfer or certified cheque.
+
+Sincerely,
+
+Guido the Elf,
+Collections Department
+Santa's Village
+
+<%if behavior == "naughty" -%>
+P.S. For a limited time get 25% off the best-seller by Ms. Claus, I’m Getting Nothing for Christmas: Raising Toy-Worthy Children in a Device-Driven World.
+<%end%>
