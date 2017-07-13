@@ -1,7 +1,3 @@
-# only works for nice children the naughty
-# children are all charged for the toys they
-# didn't get
-
 require 'erb'
 
 kids_data      = File.read('data/kids-data.txt')
@@ -28,20 +24,34 @@ kids_data.each_line do |kid|
 
 #  makes an array of hashes for each kid
   list_of_toys = [] # use list of toys in the letter erb file
-  toys.each do |toy|
-    toy_hash = {}
-    toy_hash[:name] = toy
-    if toy == "Kaleidoscope"
-      toy_price = FREE_TOY
-    elsif house_value > 1000000
-        toy_price = EXPENSIVE_TOY
-    elsif house_value >= 200000
-        toy_price = CHEAP_TOY
-    elsif house_value < 200000
-      toy_price = FREE_TOY
+  if behavior == "nice"
+    toys.each do |toy|
+      toy_hash = {}
+      toy_hash[:name] = toy
+      if toy == "Kaleidoscope"
+        toy_price = FREE_TOY
+      elsif house_value > 1000000
+          toy_price = EXPENSIVE_TOY
+      elsif house_value >= 200000
+          toy_price = CHEAP_TOY
+      elsif house_value < 200000
+        toy_price = FREE_TOY
+      end
+      toy_hash[:price] = toy_price
+      list_of_toys << toy_hash
     end
-    toy_hash[:price] = toy_price
-    list_of_toys << toy_hash
+  else
+    toy_hash = {}
+    toy_hash[:name] = "Defective Toy"
+      if house_value > 1000000
+          toy_price = EXPENSIVE_TOY
+      elsif house_value >= 200000
+          toy_price = CHEAP_TOY
+      elsif house_value < 200000
+        toy_price = FREE_TOY
+      end
+      toy_hash[:price] = toy_price
+      list_of_toys << toy_hash
   end
 
   subtotal = 0

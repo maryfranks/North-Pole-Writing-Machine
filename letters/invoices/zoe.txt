@@ -14,14 +14,9 @@ Below are the charges for Zoe's Christmas toy order. The cost for each toy is a 
 Zoe's Toy Order
 =================
 
-$100	Synthesizer
-$100	Bear
-$100	Truck
-$100	Skates
-$100	Sorry
-$100	Transformers
+$100	Defective Toy
 ----
-$600	Subtotal
+$100	Subtotal
 $13		Tax
 ====
 $113	 Total

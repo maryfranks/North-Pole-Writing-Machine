@@ -14,12 +14,7 @@ Below are the charges for Fred's Christmas toy order. The cost for each toy is a
 Fred's Toy Order
 =================
 
-$0	Meccano
-$0	Gumby
-$0	Soldier
-$0		Kaleidoscope (out of stock)
-$0	Pony
-$0	Lego
+$0	Defective Toy
 ----
 $0	Subtotal
 $0		Tax

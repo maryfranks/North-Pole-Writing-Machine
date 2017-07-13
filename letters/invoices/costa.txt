@@ -14,14 +14,9 @@ Below are the charges for Costa's Christmas toy order. The cost for each toy is 
 Costa's Toy Order
 =================
 
-$1000	Bear
-$1000	Bicycle
-$1000	Lego
-$1000	Boat
-$1000	Car
-$1000	Blocks
+$1000	Defective Toy
 ----
-$6000	Subtotal
+$1000	Subtotal
 $130		Tax
 ====
 $1130	 Total

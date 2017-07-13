@@ -14,14 +14,9 @@ Below are the charges for Nora's Christmas toy order. The cost for each toy is a
 Nora's Toy Order
 =================
 
-$100	Clue
-$100	Twister
-$100	Uno
-$100	Crayons
-$100	Doll
-$100	Blocks
+$100	Defective Toy
 ----
-$600	Subtotal
+$100	Subtotal
 $13		Tax
 ====
 $113	 Total

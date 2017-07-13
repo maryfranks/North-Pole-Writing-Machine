@@ -14,14 +14,9 @@ Below are the charges for Quenten's Christmas toy order. The cost for each toy i
 Quenten's Toy Order
 =================
 
-$100	Boat
-$100	Dominoes
-$100	Blocks
-$100	Meccano
-$100	Bicycle
-$100	Lego
+$100	Defective Toy
 ----
-$600	Subtotal
+$100	Subtotal
 $13		Tax
 ====
 $113	 Total
